@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learn Js</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form action="" method="post" name="register" id="formReg">
+        <label for="email"> email:</label>
+        <input type="text" name="email" placeholder="Email" id="email"  /><br /><br />
+        <label for="password"> password:</label>
+        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" id="password"  /><br /><br />
+        <label for="Repassword"> Repassword:</label>
+        <input type="password" name="RePassword" placeholder="RePassword" id="Repassword" /><br /><br />
+        <input id="regBtn" type="button" onclick="validReg(document.getElementById('formReg'))" name="submit"value="Register"  />
+    </form>
+    <form action="" method="post" name="test" id="formLogin">
+        <label for="email"> email:</label>
+        <input type="text" name="email" placeholder="Email" id="email"  required/><br /><br />
+        <label for="password"> password:</label>
+        <input type="password" name="password" placeholder="Password" id="password" required/><br /><br />
+        <input id="loginBtn" name="submit"  onclick="validLogin(document.getElementById('formLogin'))" type="button" value="submit" />
+    </form>
+</body>
+
+</html>
